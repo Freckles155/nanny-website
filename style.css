@@ -1,100 +1,87 @@
-/* Overall page style */
 body {
-  background: linear-gradient(135deg, #ffe8ec, #fff9f0, #e8f9ff);
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background: linear-gradient(135deg, #ffe6f0, #e0f7fa);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   color: #444;
-  margin: 0;
-  padding: 0;
+  text-align: center;
   overflow-x: hidden;
 }
 
-/* Header style */
 h1 {
-  color: #f08080;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 3rem;
+  font-size: 2.5em;
+  color: #ff80ab;
+  margin-top: 30px;
 }
 
-/* Paragraph style */
 p {
-  max-width: 600px;
-  margin: 20px auto;
-  line-height: 1.8;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.centered-section {
   text-align: center;
-  font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 20px;
-  border-radius: 20px;
 }
 
-/* Buttons */
-button {
-  background-color: #ffb6b9;
-  color: white;
+.button-group button {
+  background-color: #ffd1dc;
   border: none;
-  padding: 12px 24px;
-  border-radius: 20px;
-  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
   cursor: pointer;
-  display: block;
-  margin: 20px auto;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #ffa6a9;
+.button-group button:hover {
+  background-color: #ff80ab;
+  color: white;
 }
 
-/* Bubbles / freckles (decorative) */
+/* Bubbles */
 .bubble {
   position: absolute;
   border-radius: 50%;
   opacity: 0.3;
-  animation: float 10s infinite ease-in-out;
+  animation: float 6s infinite ease-in-out;
 }
+
+.bubble1 { width: 80px; height: 80px; background: #ffccf9; top: 20%; left: 10%; }
+.bubble2 { width: 100px; height: 100px; background: #caffbf; top: 40%; left: 80%; }
+.bubble3 { width: 60px; height: 60px; background: #9bf6ff; top: 70%; left: 30%; }
+.bubble4 { width: 120px; height: 120px; background: #ffd6a5; top: 10%; left: 60%; }
+
+/* Polka dots */
+.polka-dot {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.dot1 { width: 40px; height: 40px; background: #ffe066; top: 50%; left: 15%; }
+.dot2 { width: 30px; height: 30px; background: #bdb2ff; top: 30%; left: 75%; }
+
+/* Scribbles (simulated as abstract shapes) */
+.scribble {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  background: rgba(255, 192, 203, 0.3);
+  border-radius: 50% 20% / 30% 50%;
+}
+
+.scribble1 { top: 60%; left: 50%; transform: rotate(-20deg); }
 
 @keyframes float {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-50px) scale(1.2);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* Create multiple colorful bubbles */
-.bubble1 {
-  width: 100px;
-  height: 100px;
-  background: #ffd6e0;
-  top: 50%;
-  left: 10%;
-}
-
-.bubble2 {
-  width: 80px;
-  height: 80px;
-  background: #ffecd1;
-  top: 20%;
-  left: 70%;
-}
-
-.bubble3 {
-  width: 120px;
-  height: 120px;
-  background: #d9f6ff;
-  top: 75%;
-  left: 50%;
-}
-
-.bubble4 {
-  width: 60px;
-  height: 60px;
-  background: #ffe0ac;
-  top: 40%;
-  left: 80%;
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
 }

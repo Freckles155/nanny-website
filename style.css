@@ -2,18 +2,18 @@ body {
   background-color: #bfe3ff;
   background-image: radial-gradient(#faaab9 5%, transparent 5%);
   background-size: 40px 40px;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #333;
   overflow-x: hidden;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #ff8ba7;
   margin-top: 30px;
+  font-weight: 600;
 }
 
 p {
@@ -52,7 +52,7 @@ p {
   font-size: 1em;
   border-radius: 25px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .button-group button:hover {
@@ -65,17 +65,16 @@ p {
   height: 120px;
   border-radius: 50%;
   position: absolute;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
   border: 2px solid rgba(255, 255, 255, 0.3);
   animation: float 6s ease-in-out infinite;
 }
 
 .bubble1 { top: 15%; left: 5%; }
-.bubble2 { top: 35%; right: 10%; }
+.bubble2 { top: 30%; right: 10%; }
 .bubble3 { bottom: 25%; left: 15%; }
 .bubble4 { bottom: 30%; right: 20%; }
 .bubble5 { top: 5%; right: 30%; }
-.bubble6 { bottom: 20%; left: 35%; }
 
 @keyframes float {
   0% { transform: translateY(0px); }

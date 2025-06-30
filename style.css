@@ -1,5 +1,7 @@
 body {
-  background: linear-gradient(#bfe3ff, #faaab9);
+  background-color: #bfe3ff;
+  background-image: radial-gradient(#faaab9 5%, transparent 5%);
+  background-size: 40px 40px;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   padding: 0;
@@ -63,10 +65,20 @@ p {
   height: 120px;
   border-radius: 50%;
   position: absolute;
-  opacity: 0.5;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  border: 2px solid rgba(255, 255, 255, 0.3);
   animation: float 6s ease-in-out infinite;
 }
 
-.bubble1 { background: #ffd1dc; top: 15%; left: 5%; }
-.bubble2 { background: #bdb2ff; top: 35%; right: 10%; }
-.bubble3 { background: #caff
+.bubble1 { top: 15%; left: 5%; }
+.bubble2 { top: 35%; right: 10%; }
+.bubble3 { bottom: 25%; left: 15%; }
+.bubble4 { bottom: 30%; right: 20%; }
+.bubble5 { top: 5%; right: 30%; }
+.bubble6 { bottom: 20%; left: 35%; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}

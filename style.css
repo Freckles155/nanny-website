@@ -10,7 +10,7 @@ body {
 h1 {
   font-size: 2em;
   color: #ff8ba7;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 p {
@@ -26,6 +26,11 @@ section h2 {
   text-align: center;
   font-size: 1.8em;
   color: #9bf6ff;
+}
+
+section p {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .button-group {
@@ -48,27 +53,24 @@ section h2 {
   transform: scale(1.05);
 }
 
-.bubble-gallery {
+.bubble-center {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
   margin-top: 30px;
 }
 
 .bubble {
-  width: 120px;
-  height: 120px;
-  background: #ffd1dc;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 0.9em;
-  color: #555;
+  border-radius: 50%;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   animation: float 6s ease-in-out infinite;
+  font-size: 0.9em;
+  color: #555;
 }
 
 .big-bubble {
@@ -77,18 +79,19 @@ section h2 {
   background: #caffbf;
 }
 
+.small-bubble {
+  width: 100px;
+  height: 100px;
+  background: #ffd1dc;
+}
+
 .logo-inside {
   max-width: 100px;
   border-radius: 50%;
 }
 
-.kid-bubble:nth-child(2) { background: #bdb2ff; }
-.kid-bubble:nth-child(3) { background: #9bf6ff; }
-.kid-bubble:nth-child(4) { background: #ffe066; }
-.kid-bubble:nth-child(5) { background: #ffadad; }
-
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+  50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }

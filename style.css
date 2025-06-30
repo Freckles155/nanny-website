@@ -119,3 +119,11 @@ footer {
   color: #777;
   margin-top: 40px;
 }
+.hero-girl {
+  width: 300px; /* adjust as needed */
+  height: auto;
+  border-radius: 50%; /* makes it perfectly circular if not already */
+  border: 10px solid #7d6ab5; /* purple border color similar to the circle */
+  background: #fdd835; /* yellow inner background color if needed */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

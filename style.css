@@ -59,52 +59,14 @@ p {
 }
 
 .bubble {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   position: absolute;
   opacity: 0.5;
   animation: float 6s ease-in-out infinite;
 }
 
-.bubble1 {
-  background: #ffd1dc;
-  top: 20%;
-  left: 10%;
-}
-
-.bubble2 {
-  background: #bdb2ff;
-  top: 30%;
-  right: 15%;
-}
-
-.bubble3 {
-  background: #caffbf;
-  bottom: 20%;
-  left: 20%;
-}
-
-.bubble4 {
-  background: #ffadad;
-  bottom: 25%;
-  right: 20%;
-}
-
-.bubble5 {
-  background: #ffe066;
-  top: 10%;
-  right: 30%;
-}
-
-.bubble6 {
-  background: #9bf6ff;
-  bottom: 15%;
-  left: 35%;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
-}
+.bubble1 { background: #ffd1dc; top: 15%; left: 5%; }
+.bubble2 { background: #bdb2ff; top: 35%; right: 10%; }
+.bubble3 { background: #caff

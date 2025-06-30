@@ -1,0 +1,100 @@
+/* Overall page style */
+body {
+  background: linear-gradient(135deg, #ffe8ec, #fff9f0, #e8f9ff);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header style */
+h1 {
+  color: #f08080;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3rem;
+}
+
+/* Paragraph style */
+p {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #ffb6b9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffa6a9;
+}
+
+/* Bubbles / freckles (decorative) */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Create multiple colorful bubbles */
+.bubble1 {
+  width: 100px;
+  height: 100px;
+  background: #ffd6e0;
+  top: 50%;
+  left: 10%;
+}
+
+.bubble2 {
+  width: 80px;
+  height: 80px;
+  background: #ffecd1;
+  top: 20%;
+  left: 70%;
+}
+
+.bubble3 {
+  width: 120px;
+  height: 120px;
+  background: #d9f6ff;
+  top: 75%;
+  left: 50%;
+}
+
+.bubble4 {
+  width: 60px;
+  height: 60px;
+  background: #ffe0ac;
+  top: 40%;
+  left: 80%;
+}

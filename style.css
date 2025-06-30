@@ -1,90 +1,94 @@
 body {
-  background: linear-gradient(135deg, #ffe6f0, #e0f7fa);
+  background: #fff6f0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: #444;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  overflow-x: hidden;
+  color: #333;
 }
 
 h1 {
-  font-size: 2.5em;
-  color: #ff80ab;
+  font-size: 2em;
+  color: #ff8ba7;
   margin-top: 30px;
 }
 
 p {
   font-size: 1.2em;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 section {
-  background: rgba(255, 255, 255, 0.8);
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 20px;
-  width: 80%;
-  max-width: 700px;
+  padding: 50px 20px;
 }
 
-.centered-section {
+section h2 {
   text-align: center;
+  font-size: 1.8em;
+  color: #9bf6ff;
+}
+
+.button-group {
+  margin-top: 20px;
 }
 
 .button-group button {
-  background-color: #ffd1dc;
+  background-color: #ffd6a5;
   border: none;
-  border-radius: 30px;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 5px;
   font-size: 1em;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s;
 }
 
 .button-group button:hover {
-  background-color: #ff80ab;
-  color: white;
+  background-color: #ffadad;
+  transform: scale(1.05);
 }
 
-/* Bubbles */
+.bubble-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
 .bubble {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: float 6s infinite ease-in-out;
-}
-
-.bubble1 { width: 80px; height: 80px; background: #b63aa7; top: 20%; left: 10%; }
-.bubble2 { width: 100px; height: 100px; background: #7eeb68; top: 40%; left: 80%; }
-.bubble3 { width: 60px; height: 60px; background: #65d4df; top: 70%; left: 30%; }
-.bubble4 { width: 120px; height: 120px; background: #ffb050; top: 10%; left: 60%; }
-
-/* Polka dots */
-.polka-dot {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.4;
-}
-
-.dot1 { width: 40px; height: 40px; background: #fdde5f; top: 50%; left: 15%; }
-.dot2 { width: 30px; height: 30px; background: #7867d6; top: 30%; left: 75%; }
-
-/* Scribbles (simulated as abstract shapes) */
-.scribble {
-  position: absolute;
   width: 120px;
-  height: 80px;
-  background: rgb(255, 11, 51);
-  border-radius: 50% 20% / 30% 50%;
+  height: 120px;
+  background: #ffd1dc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  animation: float 6s ease-in-out infinite;
 }
 
-.scribble1 { top: 60%; left: 50%; transform: rotate(-20deg); }
+.big-bubble {
+  width: 180px;
+  height: 180px;
+  background: #caffbf;
+}
+
+.logo-inside {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.kid-bubble:nth-child(2) { background: #bdb2ff; }
+.kid-bubble:nth-child(3) { background: #9bf6ff; }
+.kid-bubble:nth-child(4) { background: #ffe066; }
+.kid-bubble:nth-child(5) { background: #ffadad; }
 
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  50% { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
-}
-section h2 {
-  text-align: center;
 }

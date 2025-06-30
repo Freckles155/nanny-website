@@ -50,14 +50,14 @@ section {
 .bubble {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.3;
+  opacity: 0.5;
   animation: float 6s infinite ease-in-out;
 }
 
-.bubble1 { width: 80px; height: 80px; background: #ffccf9; top: 20%; left: 10%; }
-.bubble2 { width: 100px; height: 100px; background: #caffbf; top: 40%; left: 80%; }
-.bubble3 { width: 60px; height: 60px; background: #9bf6ff; top: 70%; left: 30%; }
-.bubble4 { width: 120px; height: 120px; background: #ffd6a5; top: 10%; left: 60%; }
+.bubble1 { width: 80px; height: 80px; background: #b63aa7; top: 20%; left: 10%; }
+.bubble2 { width: 100px; height: 100px; background: #7eeb68; top: 40%; left: 80%; }
+.bubble3 { width: 60px; height: 60px; background: #65d4df; top: 70%; left: 30%; }
+.bubble4 { width: 120px; height: 120px; background: #ffb050; top: 10%; left: 60%; }
 
 /* Polka dots */
 .polka-dot {
@@ -66,15 +66,15 @@ section {
   opacity: 0.4;
 }
 
-.dot1 { width: 40px; height: 40px; background: #ffe066; top: 50%; left: 15%; }
-.dot2 { width: 30px; height: 30px; background: #bdb2ff; top: 30%; left: 75%; }
+.dot1 { width: 40px; height: 40px; background: #fdde5f; top: 50%; left: 15%; }
+.dot2 { width: 30px; height: 30px; background: #7867d6; top: 30%; left: 75%; }
 
 /* Scribbles (simulated as abstract shapes) */
 .scribble {
   position: absolute;
   width: 120px;
   height: 80px;
-  background: rgba(255, 192, 203, 0.3);
+  background: rgb(255, 11, 51);
   border-radius: 50% 20% / 30% 50%;
 }
 
@@ -84,4 +84,7 @@ section {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
   100% { transform: translateY(0px); }
+}
+section h2 {
+  text-align: center;
 }

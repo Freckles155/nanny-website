@@ -1,7 +1,8 @@
 body {
-  background-color: #bfe3ff;
-  background-image: radial-gradient(#faaab9 5%, transparent 5%);
-  background-size: 40px 40px;
+  background-color: #bfe3ff; /* soft blue background */
+  background-image: radial-gradient(#000 10%, transparent 10%), radial-gradient(#fff 10%, transparent 10%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;

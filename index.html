@@ -3,145 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <title>Freckles Nanny Services</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <style>
     body {
       margin: 0;
-      font-family: 'Fredoka', sans-serif;
-      background-color: #fef6e4;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdf5e6;
     }
-
     header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px 40px;
-      background-color: white;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: white;
     }
-
-    header nav a {
-      margin: 0 10px;
+    header img {
+      height: 50px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    nav a {
       text-decoration: none;
       color: #333;
       font-weight: 600;
     }
-
     .social-icons img {
-      width: 20px;
-      margin-left: 15px;
+      height: 24px;
+      margin-left: 10px;
     }
-
     .hero {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 80px 80px;
+      justify-content: space-between;
+      padding: 50px;
     }
-
     .hero-text {
       max-width: 500px;
     }
-
     .hero-text h1 {
-      color: #a78ac7; /* Purple from logo */
-      font-size: 42px;
-      font-weight: 700;
+      color: #a278c9; /* Purple from your logo */
+      font-size: 36px;
     }
-
     .hero-text p {
       font-size: 18px;
+      color: #333;
       margin: 10px 0;
     }
-
     .buttons a {
       display: inline-block;
-      padding: 12px 25px;
+      padding: 12px 20px;
       border-radius: 25px;
+      margin-right: 10px;
       text-decoration: none;
-      margin-right: 15px;
-      font-weight: 600;
+      font-weight: bold;
     }
-
     .discover-btn {
-      background-color: #a78ac7; /* Purple */
+      background-color: #a278c9; /* Purple */
       color: white;
     }
-
     .contact-btn {
-      background-color: #f4c04e; /* Yellow from logo */
+      background-color: #f4c44e; /* Yellow from your logo */
       color: white;
     }
-
-    .hero-image {
+    .hero-image-container {
       position: relative;
       width: 300px;
       height: 300px;
     }
-
-    .hero-image .circle-yellow {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      width: 340px;
-      height: 340px;
-      background-color: #ece25a;
+    .circle-yellow {
+      background: #f4c44e;
       border-radius: 50%;
+      width: 280px;
+      height: 280px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .circle-purple {
+      background: #a278c9;
+      border-radius: 50%;
+      width: 260px;
+      height: 260px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .hero-image {
+      border-radius: 50%;
+      position: relative;
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
       z-index: 1;
     }
-
-    .hero-image .circle-purple {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 300px;
-      height: 300px;
-      background-color: #a78ac7;
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    .hero-image img {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 270px;
-      height: 270px;
-      object-fit: cover;
-      border-radius: 50%;
-      z-index: 3;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #666;
+      background: white;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <img src="images/freckles-logo.png" alt="Freckles Logo" style="height: 50px; vertical-align: middle;">
-      <span style="font-weight: bold; vertical-align: middle;">Freckles Nanny Services</span>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Gallery</a>
-      <a href="#">Register</a>
-      <a href="#">Contact Us</a>
-    </nav>
-    <div class="social-icons">
-      <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-      <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1
+<header>
+  <img src="images/freckles-logo.png" alt="Freckles Logo">
+  <strong>Freckles Nanny Services</strong>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Gallery</a>
+    <a href="#">Register</a>
+    <a href="#">Contact Us</a>
+  </nav>
+  <div class="social-icons">
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Care That Feels Like Family</h1>
+    <p>Loving your little one</p>
+    <p>The extra hands you can trust</p>
+    <div class="buttons">
+      <a href="#" class="discover-btn">Discover More</a>
+      <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-image-container">
+    <div class="circle-yellow"></div>
+    <div class="circle-purple"></div>
+    <img src="images/happy-girl.png" alt="Happy freckled girl" class="hero-image">
+  </div>
+</div>
+
+<footer>
+  © 2025 Freckles Nanny Services. All rights reserved.
+</footer>
+
+</body>
+</html>
